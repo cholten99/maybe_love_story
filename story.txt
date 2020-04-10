@@ -1,0 +1,26 @@
+<message> ::= <greeting> <middle> <ending> <EOL>
+<greeting> ::= “Hey” | “Hi”
+<middle> ::= <response> <enquiry>+ <update>
+<update> ::= “Not much going on here” | “I look forward to hearing from you” | “I can’t stay silent any longer, I’ve always loved you!” | “Reply soon beloved”
+<ending> ::= <name> | <signoff> <name>
+<signoff> ::= “yours” | “truly” | “love”
+<name> ::= Redacted
+<enquiry> ::= “How’s it going with” <item>
+<item> ::= <media-item> | <personal-item> | <interpersonal-item>
+<media-item> ::= <tv-show> | <film> | <book> | <game>
+<personal-item> ::= <study-item> | <hobby-item> | <travel-item>
+<interpersonal-item> ::= <friend-info> | <family-member-info>
+<response> :: <response-intro> <reflection-response>+ <item-acknowledge>+
+<response-intro> ::= “It was good to hear from you” | <surprise> <surprise-response> 
+<reflection-response> ::= <reflection-thing-response> | <reflection-personal-response>
+<reflection-thing-response> ::= “Glad to hear” | “Sorry that sucked”
+<reflection-personal-response> ::= “Good to know” | “Hope things improve for them soon”
+<item-acknowledge> ::= “To answer your question about” <item> <item-response>
+<item-response> ::= <item-thing-response> | <item-personal-response>
+<item-thing-response> ::= <item-thing-state> | “I finished it and” <item-thing-conclusion>
+<item-thing-state> ::= “I haven’t finished it yet” | “I gave up part way through”
+<item-thing-conclusion> ::= “It was great” | “It was rubbish” | “Meh”
+<item-personal-response> ::= <item-personal-response-type> “thanks for asking”
+<item-personal-response-type> ::= “They’re doing great” | “They’re okay” | “They’ve been better” | “Not good actually”
+<surprise> ::= “I never expected you to say that” | “It’s so wonderful to hear” | “”
+<surprise-response> ::= “I’ve always felt the same way!” | “I can finally express my true feelings” | “”
